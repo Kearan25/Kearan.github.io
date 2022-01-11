@@ -1,0 +1,27 @@
+<?php
+ 
+$my_ip = $_SERVER["REMOTE_ADDR"];
+
+$current_page = $_SERVER["REQUEST_URI"];
+
+$page_name = $_SERVER["HTTP_REFERER"];
+
+$web_browser = $_SERVER["HTTP_USER_AGENT"];
+
+$resolution = $_GET["width"]."x".$_GET["height"];
+echo $my_ip;
+
+echo $current_page;
+
+echo $page_name;
+
+echo $web_browser;
+
+echo $resolution;
+
+include_once("admin/connect.php");
+    
+$query="INSERT INTO `unit27`.`t_stats` (`SSID`, `USER_IP`, `CURRENT_PAGE`, `WB_BROWSER`, `RESOLUTION`, `TIMESTAMP`) VALUES (NULL, '$my_ip', '$page_name', '$web_browser', '$resolution', CURRENT_TIMESTAMP)";
+
+$run = mysqli_query($connect,$query);
+?>
