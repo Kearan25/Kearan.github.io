@@ -12,7 +12,7 @@ body {
 }
 .navbar-inverse
 {
-background-color:	#aaaaaa;
+background-color:	#a91721; /*aaaaaa*/
 border:0px;	
 }
 
@@ -84,7 +84,7 @@ code {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   max-height:400px;
-  background-color: #a91721; /*777*/
+  background-color: #777; /*777*/
 }
 .carousel-inner > .item > img {
   position: relative;
