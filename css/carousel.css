@@ -84,7 +84,7 @@ code {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   max-height:400px;
-  background-color: #777;
+  background-color: #a91721; /*777*/
 }
 .carousel-inner > .item > img {
   position: relative;
