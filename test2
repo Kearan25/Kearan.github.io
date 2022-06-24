@@ -1,0 +1,47 @@
+<section class="topInfo1">
+        <div class="videoSection">
+            <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                <source src='Kearan-Showcase.mp4' type="video/mp4">
+            </video>
+        </div>
+        <div class="videoOverlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>Marketing the Boating and Marine Industry Through Video</h1>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <a class="btn topInfoBtn btn-block" href="/services">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+.videoSection {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+#video-elem {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.videoOverlay {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
